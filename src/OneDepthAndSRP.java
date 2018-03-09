@@ -28,7 +28,7 @@ class Board {
         return builder.toString();
     }
 
-    private String convertEachHeight(int height, int width){
+    private String convertEachHeight(int height, int width) {
         StringBuilder builder = new StringBuilder();
         for (int pos = 0; pos < width; pos++) {
             builder.append(board[height][pos]);
@@ -38,7 +38,7 @@ class Board {
 }
 
 class BoardViewer {
-    static void viewBoard(Board board){
+    static void viewBoard(Board board) {
         System.out.println(board.convertBoardForView());
     }
 }
